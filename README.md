@@ -5,10 +5,11 @@ Load and Preview Image File with HTML and Javascript
 
 
 ``` html
+<img src="noimg.png" style="width: 500px; height: 500px; object-fit: cover;" id="output">
+
 <form method="post" action="" enctype="multipart/form-data">
   <!-- Other Elements -->
-  <input type="file" name="easyfile">
-  <input type="submit" name="upload">
+  <input type="file" name="easyfile" onchange="loadFile(event)"> 
 </form>
 ```
 
@@ -20,7 +21,6 @@ Load and Preview Image File with HTML and Javascript
     output.src = URL.createObjectURL(event.target.files[0]);
   };
 </script>
-</form>
 ```
 
 
