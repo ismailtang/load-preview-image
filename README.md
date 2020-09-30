@@ -24,3 +24,5 @@ Load and Preview Image File with HTML and Javascript
 ```
 
 
+
+
